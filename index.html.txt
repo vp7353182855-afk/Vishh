@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>For You ❤️</title>
+<style>
+body {
+  font-family: Arial;
+  text-align: center;
+  background: #ffe6ea;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #ff4d6d;
+  color: white;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Hey Meghana ❤️</h2>
+
+<p id="message">
+I know yesterday wasn’t easy… but I just want you to know, no matter what happens, I choose you. Always.
+</p>
+
+<button onclick="changeMessage()">Click me 🥺</button>
+
+<div id="photoSection" style="display:none;">
+  <h3>Our Moments 📸</h3>
+  <img src="photo1.jpg">
+  <img src="photo2.jpg">
+</div>
+
+<button onclick="showPhotos()">See something special 💌</button>
+
+</div>
+
+<script>
+function changeMessage() {
+  document.getElementById("message").innerText =
+  "Even when we fight, I don’t stop loving you. You’re still my favorite person. ❤️";
+}
+
+function showPhotos() {
+  document.getElementById("photoSection").style.display = "block";
+}
+</script>
+
+</body>
+</html>
